@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning JS</title>
+</head>
+<body>
+    <script>
+
+        function add(a,b,c){
+            // add the 3 numbers a, b & c together and print it out to the console
+            console.log(a + b + c)
+        }
+
+
+
+        function subtract(x,y){
+            // subtract y from x and print it out to the console
+            console.log(y - x)
+        }
+
+
+        function sayHi(name){
+            // print out to the console 'Hi, my name is ' plus the name parameter
+            console.log('Hi, my name is ' + name)
+        }
+
+        function countBackwards(){
+            // run a loop that prints out to the console all the numbers from 10 to 1
+            for(let i=10; i>=1; i=i-1){
+              console.log(i);
+            }
+        }
+
+        function getItemAtIndex(arr1, index){
+            // print out to the console the value of arr1 and the index of 'index'
+            console.log(arr1 [index])
+
+        }
+
+        function printOutArray(arr2){
+            // print out to the console the contents of an array
+
+            //HINT: Look up the 'length' property of an array
+            for(let i = 0; i < arr2.length; i ++)
+            console.log(arr2 [i]);
+        }
+
+            let sum = 0;
+        function sumContentsOfArray(arr3){
+            // sum together the contents of an array and print out to the console
+            // use for loop
+            for(let i = 0; i < arr3.length; i ++){
+              sum += arr3.length;
+            }
+              console.log(sum);
+
+        }
+
+        function underOver(arr3){
+            // print out to the console the number of elements in arr3 that are greater than 4, and
+            // the number that are less than or equal to 4
+            //greater than 4 in a group - less than 4 in one group
+
+
+          var over = 0;
+          var under = 0;
+
+          for(let o = 0; o < arr3.length; o++){
+            if(arr3[o] > 4){
+              over = over + 1;
+            }
+
+            console.log(over);
+
+          }
+
+          for(let o = 0; o < arr3.length; o++){
+            if(arr3[o] <= 4){
+              under = under + 1;
+            }
+
+            console.log(under);
+
+          }
+        }
+
+        function birdPerson(){
+            // print out to the console a countdown starting at 51 going to 1, but if the number can be
+            // divided by then 3 printout 'Bird', if it can be divided by 5 then print out 'Person',
+            // and if it can be divided by both 3 AND 5 print out 'BirdPerson'
+
+            //HINT: look up modulo operator'
+    for (i = 51; i >= 1; i -- ){
+      if (i % 5 == 0 && i % 3 == 0){
+        console.log('birdPerson')
+      }
+      else if (i % 3 == 0){
+        console.log('bird')
+      }
+
+      else if (i % 5 == 0){
+        console.log('person')
+      }
+      else
+      console.log(i)
+    }
+
+
+        }
+
+        //-----------------------
+
+        //Variables
+        let a = 3;
+        let b = 8;
+        let c = -1;
+
+        let x = 10;
+        let y = 3;
+        //
+        let name = 'Tabetha';
+        //
+        let arr1 = ['pen', 'mouse', 'heater', 'chair', 'kettle'];
+        let index = 3;
+        //
+        let arr2 = [1, 5, 'Bert', false];
+        //
+        let arr3 = [3,-1,6,14,-3];
+        //
+        let arr4 = [7,1,3,8,9,2,5,5];
+
+        //-------------------------------
+
+        // Function calls
+
+        add(a,b,c);
+        subtract(x,y);
+        sayHi(name);
+        countBackwards();
+        getItemAtIndex(arr1,index);
+        printOutArray(arr2);
+        sumContentsOfArray(arr3);
+        birdPerson('BirdPerson');
+
+        underOver(arr3);
+
+
+    </script>
+</body>
+</html>
